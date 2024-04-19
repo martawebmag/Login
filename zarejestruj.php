@@ -67,7 +67,7 @@ if (isset($_POST['email']))
 		
 		//Sprawdź poprawność hasła
 		$haslo = $_POST['haslo'];
-		$haslo_hash = password_hash($haslo, PASSWORD_DEFAULT);
+		// $haslo_hash = password_hash($haslo, PASSWORD_DEFAULT);
 		
 		if ((strlen($haslo)<8) || (strlen($haslo)>20))
 		{
