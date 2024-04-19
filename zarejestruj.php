@@ -67,17 +67,17 @@ if (isset($_POST['email']))
 		
 		//Sprawdź poprawność hasła
 		$haslo = $_POST['haslo'];
-
+		$haslo_hash = password_hash($haslo, PASSWORD_DEFAULT);
 		
 		if ((strlen($haslo)<8) || (strlen($haslo)>20))
 		{
 			$wszystko_OK=false;
 			$_SESSION['e_haslo']="Hasło musi posiadać od 8 do 20 znaków!";
-		}
+		} 
 		
 	
 
-		$haslo_hash = password_hash($haslo, PASSWORD_DEFAULT);
+	
 		
 		//Czy zaakceptowano regulamin?
 		if (!isset($_POST['regulamin']))
