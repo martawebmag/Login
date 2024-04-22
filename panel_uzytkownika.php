@@ -31,7 +31,7 @@ if (!isset($_SESSION['zalogowany']))
 
                 <div class="input-group">
                     <?php
-                	echo "<p>Witaj ".$_SESSION['user'].'! [ <a href="wyloguj.php">Wyloguj się!</a> ]</p>';
+                	echo "<p>Witaj ".$_SESSION['user'].'! [ <a href="wyloguj.php">Wyloguj się!</a>]</p>';
 
                      ?>
                 </div>
