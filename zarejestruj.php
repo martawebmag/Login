@@ -122,7 +122,7 @@ if (isset($_POST['email']))
 			else
 			{
 				//Czy email już istnieje?
-				$rezultat = $conn->query("SELECT id FROM koordynatorzy WHERE Email='$email'");
+				$rezultat = $conn->query("SELECT id FROM koordynatorzy WHERE user='$login'");
 				
 				if (!$rezultat) throw new Exception($conn->error);
 				
@@ -149,8 +149,8 @@ if (isset($_POST['email']))
 				{
 					//Hurra, wszystkie testy zaliczone, dodajemy gracza do bazy
 					
-					if ($conn->query("INSERT INTO koordynatorzy (Imię, Nazwisko, Email, Diecezja, user, pass) 
-                    VALUES ('$imie', '$nazwisko', '$email', '$diecezja', '$login', '$haslo')"))
+					if ($conn->query("INSERT INTO koordynatorzy (imie, nazwisko, diecezja, user, pass) 
+                    VALUES ('$imie', '$nazwisko', '$diecezja', '$login', '$haslo')"))
 					{
 						$_SESSION['udanarejestracja']=true;
 						header('Location: index_success.php');

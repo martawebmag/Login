@@ -65,7 +65,11 @@
         </div>
         <br>
         <div class="input-group">
+<<<<<<< HEAD
             <label for="login">Login (wymagany email w domenie dzielo.pl)</label>
+=======
+            <label for="login">Login (email w domenie dzielo.pl)</label>
+>>>>>>> df83254a97380b5030ef9b98e95a709c3c37b857
             <input type="email" id="login" name="login">
         </div>
         <div class="input-group">

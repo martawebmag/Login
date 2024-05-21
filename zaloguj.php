@@ -25,8 +25,13 @@
 		$login = htmlentities($login, ENT_QUOTES, "UTF-8");
 		$haslo = htmlentities($haslo, ENT_QUOTES, "UTF-8");
 	
+<<<<<<< HEAD
 		if ($rezultat = $polaczenie->query(
 		sprintf("SELECT * FROM koordynatorzy WHERE login='%s' AND haslo='%s'",
+=======
+		if ($rezultat = @$polaczenie->query(
+		sprintf("SELECT * FROM koordynatorzy WHERE user='%s' AND haslo='%s'",
+>>>>>>> df83254a97380b5030ef9b98e95a709c3c37b857
 		mysqli_real_escape_string($polaczenie,$login),
 		mysqli_real_escape_string($polaczenie,$haslo))))
 		{
