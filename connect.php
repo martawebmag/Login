@@ -1,9 +1,9 @@
 <?php
 // Połączenie z bazą danych
 $host = "localhost";
-$db_user = "marta";
-$db_password = "!Marteczka1";
-$db_name = "uzytkownicy";
+$db_user = "root";
+$db_password = "";
+$db_name = "fundacja";
 
 
 ?>

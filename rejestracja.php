@@ -58,27 +58,21 @@
             <label for="nazwisko">Nazwisko</label>
             <input type="text" id="nazwisko" name="nazwisko">
         </div>
-        <div class="input-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email">
-        </div>
+
         <div class="input-group">
             <label for="diecezja">Diecezja</label>
             <input type="text" id="diecezja" name="diecezja">
         </div>
         <br>
         <div class="input-group">
-            <label for="login">Login</label>
-            <input type="text" id="login" name="login">
+            <label for="login">Login (wymagany email w domenie dzielo.pl)</label>
+            <input type="email" id="login" name="login">
         </div>
         <div class="input-group">
             <label for="haslo">Hasło</label>
             <input type="password" id="haslo" name="haslo">
         </div>
       
-        <label for="regulamin">
-        <input type="checkbox" id="regulamin" name="regulamin">
-            Akceptuję regulamin</label>
 
     </div>
         <br>
